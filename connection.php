@@ -21,10 +21,7 @@ class Database {
 }
 
 // Database connection details
-$db_host = 'localhost';
-$db_name = 'doge.litecoin.studio';
-$db_user = 'name';
-$db_password = 'poop';
+<your data base variables here>
 
 function getDbConnection() {
     global $db_host, $db_name, $db_user, $db_password;

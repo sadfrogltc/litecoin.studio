@@ -1,0 +1,671 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Links */
+a {
+    color: #999999;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #141212;
+}
+
+a.register-link {
+    display: inline-block;
+    background-color: #4d4d4d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+a.register-link:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;/* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Body Styles */
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #0d0d0d;
+        color: #e6e6e6;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    /* Links */
+    a {
+        color: #999999;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #141212;
+    }
+    
+    a.register-link {
+        display: inline-block;
+        background-color: #4d4d4d;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 1em;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+    
+    a.register-link:hover {
+        background-color: #333333;
+        transform: translateY(-2px);
+    }
+    
+    /* Container */
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: #1a1a1a;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        position: relative;
+    }
+    
+    /* Wallet Sections */
+    .wallet-section {
+        margin-bottom: 30px;
+    }
+    
+    /* Headings */
+    h1, h2, h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+        color: #b3b3b3;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    /* Forms */
+    form {
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: #999999;
+    }
+    
+    input[type="text"], input[type="password"], input[type="submit"], button, select, input[type="range"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        outline: none;
+        background-color: #262626;
+        color: #e6e6e6;
+    }
+    
+    input[type="text"]::placeholder, input[type="password"]::placeholder {
+        color: #666666;
+    }
+    
+    /* Buttons */
+    input[type="submit"], button, input[type="button"] {
+        margin-top: 1em;
+        background-color: #333333;
+        color: #e6e6e6;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        padding: 12px 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    input[type="submit"]:hover, button:hover, input[type="button"]:hover {
+        background-color: #4d4d4d;
+        transform: translateY(-2px);
+    }
+    
+    /* Fee Rate Container */
+    .fee-rate-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    .fee-rate-container label {
+        margin: 0;
+        white-space: nowrap;
+    }
+    
+    #selfcustody-feeRate-LTC {
+        flex: 1;
+    }
+    
+    .transaction-button {
+        padding: 8px 15px;
+        font-size: 0.875rem;
+        border-radius: 20px;
+        background-color: #4d4d4d;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        text-transform: uppercase;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .transaction-button:hover {
+        background-color: #333333;
+        transform: translateY(-2px);
+    }
+    
+    /* Collapsible Button */
+    .collapsible {
+        background-color: #4d4d4d;
+        color: #ffffff;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 10px 0;
+        transition: background-color 0.3s ease;
+    }
+    
+    .collapsible:hover {
+        background-color: #333333;
+    }
+    
+    .collapsible:after {
+        content: '\002B';
+        color: #ffffff;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2212";
+    }
+    
+    /* Collapsible Content */
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #262626;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        color: #e6e6e6;
+    }
+    
+    /* Style for UTXO Data */
+    #unspentTx-LTC {
+        padding: 20px;
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        color: #e6e6e6;
+        font-size: 16px;
+    }
+    
+    /* Show Secrets Button */
+    #show-secrets-button-LTC {
+        background-color: #4d4d4d;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        text-transform: uppercase;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 20px; /* Adjust spacing as needed */
+    }
+    
+    #show-secrets-button-LTC:hover {
+        background-color: #333333;
+        transform: translateY(-2px);
+    }
+    
+    /* Sign Out Button */
+    #sign-out-ltc-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #ff4444;
+        color: white;
+        border: none;
+        border-radius: 50%;  /* Makes the button a circle */
+        font-size: 20px;
+        display: flex;
+        align-items: center; /* Centers the icon/text vertically */
+        justify-content: center; /* Centers the icon/text horizontally */
+        cursor: pointer;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+        padding: 0;
+    }
+    
+    #sign-out-ltc-btn:hover {
+        background-color: #ff2222;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    #sign-out-ltc-btn:active {
+        background-color: #dd0000;
+        transform: translateY(2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    
+    /* Modal Styles */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal-content {
+        background-color: #1a1a1a;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    /* Button Styles inside Modal */
+    .modal-button {
+        background-color: #4d4d4d;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        text-transform: uppercase;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+    
+    .modal-button:hover {
+        background-color: #333333;
+        transform: translateY(-2px);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+        }
+        .wallet-section {
+            text-align: center;
+        }
+        .transaction-button {
+            width: 100%;
+        }
+    }
+    
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+/* Wallet Sections */
+.wallet-section {
+    margin-bottom: 30px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: #b3b3b3;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    margin: 20px 0;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #999999;
+}
+
+input[type="text"], input[type="password"], input[type="submit"], button, select, input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: #262626;
+    color: #e6e6e6;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #666666;
+}
+
+/* Buttons */
+input[type="submit"], button, input[type="button"] {
+    margin-top: 1em;
+    background-color: #333333;
+    color: #e6e6e6;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover, button:hover, input[type="button"]:hover {
+    background-color: #4d4d4d;
+    transform: translateY(-2px);
+}
+
+/* Fee Rate Container */
+.fee-rate-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.fee-rate-container label {
+    margin: 0;
+    white-space: nowrap;
+}
+
+#selfcustody-feeRate-LTC {
+    flex: 1;
+}
+
+.transaction-button {
+    padding: 8px 15px;
+    font-size: 0.875rem;
+    border-radius: 20px;
+    background-color: #4d4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+/* Collapsible Button */
+.collapsible {
+    background-color: #4d4d4d;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #333333;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+/* Collapsible Content */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #262626;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #e6e6e6;
+}
+
+/* Style for UTXO Data */
+#unspentTx-LTC {
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: #e6e6e6;
+    font-size: 16px;
+}
+
+/* Show Secrets Button */
+#show-secrets-button-LTC {
+    background-color: #4d4d4d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+#show-secrets-button-LTC:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+/* Sign Out Button */
+#sign-out-ltc-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;  /* Makes the button a circle */
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Centers the icon/text vertically */
+    justify-content: center; /* Centers the icon/text horizontally */
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    padding: 0;
+}
+
+#sign-out-ltc-btn:hover {
+    background-color: #ff2222;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#sign-out-ltc-btn:active {
+    background-color: #dd0000;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .wallet-section {
+        text-align: center;
+    }
+    .transaction-button {
+        width: 100%;
+    }
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    color: #e6e6e6;
+    text-align: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-button {
+    background-color: #4d4d4d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.modal-button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}

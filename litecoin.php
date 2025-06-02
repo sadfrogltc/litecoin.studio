@@ -5,8 +5,8 @@ ini_set('display_errors', 1);
 require_once("node.php");
 
 class Litecoin {
-    private static $_rpc_user = 'x';
-    private static $_rpc_password = 'x';
+    private static $_rpc_user = 'yours';
+    private static $_rpc_password = 'yours';
     private static $_rpc_host = '127.0.0.1';
     private static $_rpc_port = '9332';
     private static $_node;

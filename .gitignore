@@ -4,3 +4,7 @@ logs/
 *.DS_Store
 node_modules/
 vendor/
+admin.php
+banned.php
+connection.php
+access_logger.php
